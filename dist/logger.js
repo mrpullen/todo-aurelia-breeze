@@ -48,49 +48,4 @@ System.register(["CodeSeven/toastr"], function (_export) {
     }
   };
 });
-
-//
-// ﻿app.logger = (function () {
-//
-//     // This logger wraps the toastr logger and also logs to console
-//     // toastr.js is library by John Papa that shows messages in pop up toast.
-//     // https://github.com/CodeSeven/toastr
-//
-//     toastr.options.timeOut = 2000; // 2 second toast timeout
-//     toastr.options.positionClass = 'toast-bottom-right';
-//
-//     var logger = {
-//         error: error,
-//         info: info,
-//         success: success,
-//         warning: warning,
-//         log: log // straight to console; bypass toast
-//     };
-//
-//     function error(message, title) {
-//         toastr.error(message, title);
-//         log("Error: " + message);
-//     };
-//     function info(message, title) {
-//         toastr.info(message, title);
-//         log("Info: " + message);
-//     };
-//     function success(message, title) {
-//         toastr.success(message, title);
-//         log("Success: " + message);
-//     };
-//     function warning(message, title) {
-//         toastr.warning(message, title);
-//         log("Warning: " + message);
-//     };
-//
-//     // IE and google chrome workaround
-//     // http://code.google.com/p/chromium/issues/detail?id=48662
-//     function log() {
-//         var console = window.console;
-//         !!console && console.log && console.log.apply && console.log.apply(console, arguments);
-//     }
-//
-//     return logger;
-// })();
 //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxvZ2dlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO01BQU8sTUFBTSxpQ0FLQSxjQUFjOzs7O0FBTHBCLFlBQU07Ozs7Ozs7OztBQUViLFlBQU0sQ0FBQyxPQUFPLENBQUMsT0FBTyxHQUFHLElBQUksQ0FBQztBQUM5QixZQUFNLENBQUMsT0FBTyxDQUFDLGFBQWEsR0FBRyxvQkFBb0IsQ0FBQzs7QUFFdkMsb0JBQWM7QUFDZCxpQkFEQSxjQUFjLEdBQ1o7Z0NBREYsY0FBYztTQUNWOztxQkFESixjQUFjO0FBR3pCLGVBQUs7bUJBQUEsZUFBQyxNQUFNLEVBQUUsT0FBTyxFQUFVO0FBQzdCLG9CQUFNLENBQUMsT0FBTyxDQUFDLE9BQU8sRUFBRSxVQUFLLENBQUMsQ0FBQyxDQUFDLENBQUM7YUFDbEM7O0FBRUQsY0FBSTttQkFBQSxjQUFDLE1BQU0sRUFBRSxPQUFPLEVBQVU7QUFDNUIsb0JBQU0sQ0FBQyxJQUFJLENBQUMsT0FBTyxFQUFFLFVBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQzthQUMvQjs7QUFFRCxjQUFJO21CQUFBLGNBQUMsTUFBTSxFQUFFLE9BQU8sRUFBVTtBQUM1QixvQkFBTSxDQUFDLE9BQU8sQ0FBQyxPQUFPLEVBQUUsVUFBSyxDQUFDLENBQUMsQ0FBQyxDQUFDO2FBQ2xDOztBQUVELGVBQUs7bUJBQUEsZUFBQyxNQUFNLEVBQUUsT0FBTyxFQUFVO0FBQzdCLG9CQUFNLENBQUMsS0FBSyxDQUFDLE9BQU8sRUFBRSxVQUFLLENBQUMsQ0FBQyxDQUFDLENBQUM7YUFDaEM7Ozs7ZUFqQlUsY0FBYyIsImZpbGUiOiJsb2dnZXIuanMiLCJzb3VyY2VSb290IjoiL3NyYy8ifQ==

@@ -11,7 +11,7 @@ System.config({
   "map": {
     "CodeSeven/toastr": "github:CodeSeven/toastr@2.1.1",
     "aurelia-bootstrapper": "github:aurelia/bootstrapper@0.10.0",
-    "aurelia-breeze": "github:jdanyow/aurelia-breeze@master",
+    "aurelia-breeze": "github:jdanyow/aurelia-breeze@1.3.0",
     "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.5.1",
     "aurelia-framework": "github:aurelia/framework@0.9.0",
     "aurelia-http-client": "github:aurelia/http-client@0.6.1",
@@ -108,7 +108,7 @@ System.config({
       "aurelia-task-queue": "github:aurelia/task-queue@0.2.5",
       "core-js": "npm:core-js@0.4.10"
     },
-    "github:jdanyow/aurelia-breeze@master": {
+    "github:jdanyow/aurelia-breeze@1.3.0": {
       "aurelia-binding": "github:aurelia/binding@0.4.0",
       "aurelia-http-client": "github:aurelia/http-client@0.6.1",
       "breeze": "npm:breeze-client@1.5.4"

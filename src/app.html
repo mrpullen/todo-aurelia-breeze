@@ -21,14 +21,14 @@
         <li repeat.for="item of items">
           <div show.bind="!item.isEditing">
             <input type="checkbox" checked.bind="item.IsDone" />
-            <label click.delegate="$parent.editBegin(item, $event)" class="${item.IsDone ? 'done': ''} ${item.IsArchived ? 'archived' : ''}">
+            <label click.delegate="$parent.editBegin(item)" class="${item.IsDone ? 'done': ''} ${item.IsArchived ? 'archived' : ''}">
               ${item.Description}
             </label>
             <a href="#" click.delegate="$parent.deleteItem(item, $event)">X</a>
           </div>
           <div show.bind="item.isEditing">
-            <form click.delegate="$parent.editEnd(item, $event)">
-              <input type="text" value.bind="item.Description" /> <!-- hasfocus.bind: isEditing" -->
+            <form submit.delegate="$parent.editEnd(item)">
+              <input type="text" value.bind="item.Description" blur.delegate="$parent.editEnd(item)" />
             </form>
           </div>
         </li>
