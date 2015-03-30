@@ -1,0 +1,47 @@
+<template>
+  <div id="applicationHost">
+    <header>
+      <h1>Breeze Todos</h1>
+      <h2>with Aurelia</h2>
+      <form submit.delegate="addItem()">
+        <input type="text" value.bind="newTodoDescription" placeholder="What needs to be done?">
+      </form>
+    </header>
+
+    <section>
+      <div class="mark-all" >
+        <input id="markAll" type="checkbox" checked.bind="markAllCompleted" if.bind="items.length">
+        <label for="markAll" if.bind="items.length">Mark all as complete</label>
+
+        <input id="includeArchived" type="checkbox" checked.bind="includeArchived">
+        <label for="includeArchived" class="archived">Show archived</label>
+      </div>
+
+      <ul>
+        <li repeat.for="item of items">
+          <div show.bind="!item.isEditing">
+            <input type="checkbox" checked.bind="item.IsDone" />
+            <label click.delegate="$parent.editBegin(item, $event)" class="${item.IsDone ? 'done': ''} ${item.IsArchived ? 'archived' : ''}">
+              ${item.Description}
+            </label>
+            <a href="#" click.delegate="$parent.deleteItem(item, $event)">X</a>
+          </div>
+          <div show.bind="item.isEditing">
+            <form click.delegate="$parent.editEnd(item, $event)">
+              <input type="text" value.bind="item.Description" /> <!-- hasfocus.bind: isEditing" -->
+            </form>
+          </div>
+        </li>
+      </ul>
+      <div class="controlLinks">
+        <a href="#" click.delegate="purge()">Purge</a>&nbsp;&nbsp;
+        <a href="#" click.delegate="reset()">Reset</a>
+      </div>
+    </section>
+
+    <footer>
+      <div show.bind="itemsLeftMessage">${itemsLeftMessage}</div>
+      <a href="#" show.bind="archiveCompletedMessage" click.delegate="archiveCompletedItems()">${archiveCompletedMessage}</a>
+    </footer>
+  </div>
+</template>
