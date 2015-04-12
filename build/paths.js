@@ -7,5 +7,6 @@ module.exports = {
   source: appRoot + '**/*.js',
   html: appRoot + '**/*.html',
   style: 'styles/**/*.css',
-  output: 'dist/'
+  output: 'dist/',
+  doc:'./doc'
 };

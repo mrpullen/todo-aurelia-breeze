@@ -1,51 +1,52 @@
-System.register(["CodeSeven/toastr"], function (_export) {
-  var toastr, _createClass, _classCallCheck, ToastrAppender;
+System.register(['CodeSeven/toastr'], function (_export) {
+  var toastr, _classCallCheck, _createClass, ToastrAppender;
 
   return {
     setters: [function (_CodeSevenToastr) {
-      toastr = _CodeSevenToastr["default"];
+      toastr = _CodeSevenToastr['default'];
     }],
     execute: function () {
-      "use strict";
+      'use strict';
 
-      _createClass = (function () { function defineProperties(target, props) { for (var key in props) { var prop = props[key]; prop.configurable = true; if (prop.value) prop.writable = true; } Object.defineProperties(target, props); } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+      _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } };
 
-      _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } };
+      _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-      toastr.options.timeOut = 2000; // 2 second toast timeout
-      toastr.options.positionClass = "toast-bottom-right";
+      toastr.options.timeOut = 2000;
+      toastr.options.positionClass = 'toast-bottom-right';
 
-      ToastrAppender = _export("ToastrAppender", (function () {
+      ToastrAppender = (function () {
         function ToastrAppender() {
           _classCallCheck(this, ToastrAppender);
         }
 
-        _createClass(ToastrAppender, {
-          debug: {
-            value: function debug(logger, message) {
-              toastr.success(message, arguments[2]);
-            }
-          },
-          info: {
-            value: function info(logger, message) {
-              toastr.info(message, arguments[2]);
-            }
-          },
-          warn: {
-            value: function warn(logger, message) {
-              toastr.warning(message, arguments[2]);
-            }
-          },
-          error: {
-            value: function error(logger, message) {
-              toastr.error(message, arguments[2]);
-            }
+        _createClass(ToastrAppender, [{
+          key: 'debug',
+          value: function debug(logger, message) {
+            toastr.success(message, arguments[2]);
           }
-        });
+        }, {
+          key: 'info',
+          value: function info(logger, message) {
+            toastr.info(message, arguments[2]);
+          }
+        }, {
+          key: 'warn',
+          value: function warn(logger, message) {
+            toastr.warning(message, arguments[2]);
+          }
+        }, {
+          key: 'error',
+          value: function error(logger, message) {
+            toastr.error(message, arguments[2]);
+          }
+        }]);
 
         return ToastrAppender;
-      })());
+      })();
+
+      _export('ToastrAppender', ToastrAppender);
     }
   };
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxvZ2dlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO01BQU8sTUFBTSxpQ0FLQSxjQUFjOzs7O0FBTHBCLFlBQU07Ozs7Ozs7OztBQUViLFlBQU0sQ0FBQyxPQUFPLENBQUMsT0FBTyxHQUFHLElBQUksQ0FBQztBQUM5QixZQUFNLENBQUMsT0FBTyxDQUFDLGFBQWEsR0FBRyxvQkFBb0IsQ0FBQzs7QUFFdkMsb0JBQWM7QUFDZCxpQkFEQSxjQUFjLEdBQ1o7Z0NBREYsY0FBYztTQUNWOztxQkFESixjQUFjO0FBR3pCLGVBQUs7bUJBQUEsZUFBQyxNQUFNLEVBQUUsT0FBTyxFQUFVO0FBQzdCLG9CQUFNLENBQUMsT0FBTyxDQUFDLE9BQU8sRUFBRSxVQUFLLENBQUMsQ0FBQyxDQUFDLENBQUM7YUFDbEM7O0FBRUQsY0FBSTttQkFBQSxjQUFDLE1BQU0sRUFBRSxPQUFPLEVBQVU7QUFDNUIsb0JBQU0sQ0FBQyxJQUFJLENBQUMsT0FBTyxFQUFFLFVBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQzthQUMvQjs7QUFFRCxjQUFJO21CQUFBLGNBQUMsTUFBTSxFQUFFLE9BQU8sRUFBVTtBQUM1QixvQkFBTSxDQUFDLE9BQU8sQ0FBQyxPQUFPLEVBQUUsVUFBSyxDQUFDLENBQUMsQ0FBQyxDQUFDO2FBQ2xDOztBQUVELGVBQUs7bUJBQUEsZUFBQyxNQUFNLEVBQUUsT0FBTyxFQUFVO0FBQzdCLG9CQUFNLENBQUMsS0FBSyxDQUFDLE9BQU8sRUFBRSxVQUFLLENBQUMsQ0FBQyxDQUFDLENBQUM7YUFDaEM7Ozs7ZUFqQlUsY0FBYyIsImZpbGUiOiJsb2dnZXIuanMiLCJzb3VyY2VSb290IjoiL3NyYy8ifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxvZ2dlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzZDQVFhLGNBQWM7Ozs7Ozs7Ozs7Ozs7QUFIM0IsWUFBTSxDQUFDLE9BQU8sQ0FBQyxPQUFPLEdBQUcsSUFBSSxDQUFDO0FBQzlCLFlBQU0sQ0FBQyxPQUFPLENBQUMsYUFBYSxHQUFHLG9CQUFvQixDQUFDOztBQUV2QyxvQkFBYztBQUNkLGlCQURBLGNBQWMsR0FDWjtnQ0FERixjQUFjO1NBQ1Y7O3FCQURKLGNBQWM7O2lCQUdwQixlQUFDLE1BQU0sRUFBRSxPQUFPLEVBQVU7QUFDN0Isa0JBQU0sQ0FBQyxPQUFPLENBQUMsT0FBTyxFQUFFLFVBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQztXQUNsQzs7O2lCQUVHLGNBQUMsTUFBTSxFQUFFLE9BQU8sRUFBVTtBQUM1QixrQkFBTSxDQUFDLElBQUksQ0FBQyxPQUFPLEVBQUUsVUFBSyxDQUFDLENBQUMsQ0FBQyxDQUFDO1dBQy9COzs7aUJBRUcsY0FBQyxNQUFNLEVBQUUsT0FBTyxFQUFVO0FBQzVCLGtCQUFNLENBQUMsT0FBTyxDQUFDLE9BQU8sRUFBRSxVQUFLLENBQUMsQ0FBQyxDQUFDLENBQUM7V0FDbEM7OztpQkFFSSxlQUFDLE1BQU0sRUFBRSxPQUFPLEVBQVU7QUFDN0Isa0JBQU0sQ0FBQyxLQUFLLENBQUMsT0FBTyxFQUFFLFVBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQztXQUNoQzs7O2VBakJVLGNBQWM7OztnQ0FBZCxjQUFjIiwiZmlsZSI6ImxvZ2dlci5qcyIsInNvdXJjZVJvb3QiOiIvc3JjLyJ9

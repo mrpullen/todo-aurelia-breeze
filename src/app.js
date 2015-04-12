@@ -1,10 +1,13 @@
+/*
+*  This file is an ES7/Aurelia port of https://github.com/Breeze/breeze.js.samples/blob/master/net/Todo-Knockout/Todo-Knockout/app/viewModel.js
+*/
 import {DataService} from './dataservice';
-import {LogManager, ObserverLocator} from 'aurelia-framework';
+import {inject, LogManager, ObserverLocator} from 'aurelia-framework';
 
 var logger = LogManager.getLogger('DataService');
 
+@inject(DataService, ObserverLocator)
 export class App {
-  static inject() { return [DataService, ObserverLocator]; }
   constructor(dataservice, observerLocator) {
     this.dataservice = dataservice;
     this.suspendSave = false;

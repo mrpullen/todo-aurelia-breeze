@@ -1,3 +1,6 @@
+/*
+*  This file is an ES7/Aurelia port of https://github.com/Breeze/breeze.js.samples/blob/master/net/Todo-Knockout/Todo-Knockout/app/dataservice.js
+*/
 import breeze from 'breeze';
 import saveQueuing from 'breeze-client-labs/breeze.savequeuing';
 import {HttpClient} from 'aurelia-http-client';

@@ -1,3 +1,6 @@
+/*
+* This file is an ES7/Aurelia port of https://github.com/Breeze/breeze.js.samples/blob/master/net/Todo-Knockout/Todo-Knockout/app/logger.js
+*/
 import toastr from 'CodeSeven/toastr';
 
 toastr.options.timeOut = 2000; // 2 second toast timeout
