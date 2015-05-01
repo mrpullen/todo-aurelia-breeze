@@ -60,5 +60,5 @@
   "scripts": {
     "test": "gulp test"
   },
-  "jspm": {}
+  "registry": "github"
 }

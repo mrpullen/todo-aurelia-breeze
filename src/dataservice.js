@@ -13,7 +13,7 @@ export class DataService {
     var serviceName = 'http://sampleservice.breezejs.com/api/todos/';
 
     this.httpClient = new HttpClient();
-    this.httpClient.configure(builder => builder.withBaseUri(serviceName));
+    this.httpClient.configure(builder => builder.withBaseUrl(serviceName));
 
     this.manager = new breeze.EntityManager(serviceName);
     this.manager.enableSaveQueuing(true);

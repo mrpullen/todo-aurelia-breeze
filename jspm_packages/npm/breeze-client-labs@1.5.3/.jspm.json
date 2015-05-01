@@ -42,12 +42,11 @@
     "shasum": "5096201197d79b2866022cb7f679ae0fab2cfd6b",
     "tarball": "http://registry.npmjs.org/breeze-client-labs/-/breeze-client-labs-1.5.3.tgz"
   },
-  "jspm": {},
-  "registry": "npm",
   "format": "cjs",
   "ignore": [
     "node_modules"
   ],
+  "registry": "npm",
   "dependencies": {
     "process": "github:jspm/nodelibs-process@^0.1.0"
   }

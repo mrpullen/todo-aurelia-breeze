@@ -2,7 +2,7 @@ import {LogManager} from 'aurelia-framework';
 import {ToastrAppender} from './logger';
 
 LogManager.addAppender(new ToastrAppender());
-LogManager.setLevel(LogManager.levels.debug);
+LogManager.setLevel(LogManager.logLevel.debug);
 
 export function configure(aurelia) {
   aurelia.use

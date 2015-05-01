@@ -50,9 +50,9 @@
     "format": "global"
   },
   "format": "global",
-  "registry": "npm",
   "ignore": [
     "node_modules"
   ],
+  "registry": "npm",
   "dependencies": {}
 }
